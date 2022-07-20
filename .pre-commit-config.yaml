@@ -22,6 +22,13 @@ repos:
     rev: 5.10.1
     hooks:
       - id: isort
+        args: ["--profile", "black", "--filter-files"]
+
+  - repo: https://github.com/psf/black
+    rev: 22.6.0
+    hooks:
+      - id: black
+        args: ["-l", "119"]
 
   - repo: https://github.com/pycqa/flake8
     rev: 4.0.1
