@@ -2,7 +2,7 @@
 name = "witty-wyverns"
 version = "0.1.0"
 description = ""
-authors = ["Burak Kadir Er <ksenofanex@gmail.com>"]
+authors = ["Burak Kadir Er <ksenofanex@gmail.com>", "MilaDog <daniel.ryan.sergeant@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
