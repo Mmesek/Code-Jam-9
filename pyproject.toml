@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
+pre-commit = "^2.20.0"
 
 [tool.black]
 line-length = 119
