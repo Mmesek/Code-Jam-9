@@ -6,7 +6,7 @@ authors = ["Burak Kadir Er <ksenofanex@gmail.com>", "MilaDog <daniel.ryan.sergea
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "3.10.*"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.20.0"
