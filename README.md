@@ -13,17 +13,17 @@
 ## Running
 Install requirements
 ```sh
-python -m pip install requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-Run client:
+Run `client`:
 ```sh
-python -m client
+python -m src.client
 ```
 
-Run server:
+Run `server`:
 ```sh
-python -m server
+python -m src.server
 ```
 
 ## Extending
