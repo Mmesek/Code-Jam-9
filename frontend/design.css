@@ -14,18 +14,31 @@ body {
         url("//db.onlinewebfonts.com/t/60139f5a70b347366c457220378f5eda.svg#European Teletext") format("svg"); 
     }
 
-header {
-    display: block;
-}
-
-#header {
-    color: white;
-    width: 450px;
-    text-align: center;
+#header, #main, #footer {
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+}
+
+.date, .weather {
+    color: white;
+    margin: 5px 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.weather {
+    float: left;
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 20px;
+}
+
+.date {
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 0px;
 }
 
 h1 {
@@ -74,4 +87,10 @@ p {
 
 #btn4 {
     color: pink
+}
+
+@media screen and (max-width: 850px) {
+    #header, #main, #footer {
+      width:100%;
+    }
 }
