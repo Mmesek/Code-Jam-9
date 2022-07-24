@@ -1,8 +1,7 @@
 from aiohttp import web
 
 from src.modules import examples  # noqa: F401
-
-from .websocket import websocket_handler
+from src.server.websocket import websocket_handler
 
 
 if __name__ == "__main__":
