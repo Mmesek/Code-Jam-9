@@ -1,9 +1,8 @@
 import asyncio
 
+from src.client.websocket import connection
 from src.modules import examples  # noqa: F401
-from src.utils import CLIENT_DISPATCH
-
-from .websocket import connection
+from src.utils.registry import CLIENT_DISPATCH
 
 
 URL = "http://localhost:8000/"

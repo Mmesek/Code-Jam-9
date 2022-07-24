@@ -1,5 +1,5 @@
-from ..utils.models import WebSocket
-from ..utils.registry import client, server
+from src.utils.models import WebSocket
+from src.utils.registry import client, server
 
 
 @server
