@@ -1,6 +1,6 @@
 import aiohttp
 
-from ..utils.utils import dispatch
+from src.utils import dispatch
 
 
 async def connection(url: str, registry: dict):

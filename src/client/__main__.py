@@ -1,7 +1,8 @@
 import asyncio
 
-from ..modules import examples  # noqa: F401
-from ..utils.registry import CLIENT_DISPATCH
+from src.modules import examples  # noqa: F401
+from src.utils import CLIENT_DISPATCH
+
 from .websocket import connection
 
 

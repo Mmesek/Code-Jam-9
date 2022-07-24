@@ -1,6 +1,7 @@
 from aiohttp import web
 
-from ..modules import examples  # noqa: F401
+from src.modules import examples  # noqa: F401
+
 from .websocket import websocket_handler
 
 

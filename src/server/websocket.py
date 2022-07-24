@@ -1,8 +1,7 @@
 import aiohttp
 from aiohttp import web
 
-from ..utils.registry import SERVER_OPCODES
-from ..utils.utils import dispatch
+from src.utils import SERVER_OPCODES, dispatch
 
 
 async def websocket_handler(request: web.Request):
