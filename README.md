@@ -13,7 +13,7 @@
 ## Running
 Install requirements
 ```sh
-python -m pip install -r requirements.txt
+poetry install
 ```
 
 Run `client`:
@@ -47,28 +47,13 @@ async def hello_response(ws: Websocket, data: dict):
     print(data["msg"])
 ```
 
-## Developement
+## Development
+
 
 ## Contributing
 Install pre-commit:
 ```sh
 pre-commit install
-```
-
-## Docker
-Using Docker compose:
-```sh
-docker-compose up
-```
-
-Build Docker image:
-```sh
-docker build --target base -t NAME:latest .
-```
-
-Run Docker image
-```sh
-docker run -it --rm NAME
 ```
 
 ## Team Members
