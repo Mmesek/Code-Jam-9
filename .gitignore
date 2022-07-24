@@ -32,4 +32,4 @@ build/
 
 
 # frontend ignores for now
-src/frontend/fonts/
+frontend/fonts/
