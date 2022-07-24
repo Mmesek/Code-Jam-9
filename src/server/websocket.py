@@ -18,7 +18,7 @@ async def websocket_handler(request: web.Request):
             dispatch(SERVER_OPCODES, ws, data)
 
         elif msg.type == aiohttp.WSMsgType.ERROR:
-            print("ws connection closed with exception %s" % ws.exception())
+            print(f"ws connection closed with exception {ws.exception()}")
 
     print("websocket connection closed")
 
