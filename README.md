@@ -108,7 +108,6 @@ $ docker run -it --rm NAME
 
 ## Team Members
 - [Mmesek#2901](https://github.com/Mmesek)
-- [Ksenofanex#7782](https://github.com/Ksenofanex)
 - [Neur0nz#0095](https://github.com/Neur0nz)
 - [MilaDog#1234](https://github.com/MilaDog)
 - [Dyna-Soar#5783](https://github.com/Dyna-Soar)
