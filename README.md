@@ -26,24 +26,48 @@ Run `server`:
 $ python -m src.server
 ```
 
+## Payload
+Payload send between client and server should follow this style, and at the very least state `type`:
+```json
+{
+    "type": "remote_function_name", // This is dispatched function on remote client/server.
+    "data": {
+        // Data can be an arbitrary Dictonary interpreted by remote function,
+        // however it's recommended to keep it along these fields for consistency
+        "title": "Cool Title",
+        "value": 0.0,
+        "text": "Descriptive!",
+        "footer": "Bottom line"
+    },
+    "id": "#id" //Related ID for sender
+}
+```
+
 ## Extending
 In order to extend capabilities, simply add new script or module to `modules` or `plugins`. All modules/plugins will be loaded at startup automatically in these locations.
 
 Extend server capability:
 ```python
-from utils import server, Websocket
+from utils import server, WebSocket
 
 @server
-async def hello(ws: Websocket, data: dict):
-    await ws.send_json({"msg": "Hello there!", "type": "hello_response"})
+async def hello(ws: WebSocket, data: dict):
+    await ws.send_json(
+        {
+            "type": "hello_response",
+            "data": {
+                "text": "Hello there!"
+            }
+        }
+    )
 ```
 
 Extend client capability:
 ```python
-from utils import client, Websocket
+from utils import client, WebSocket
 
 @client
-async def hello_response(ws: Websocket, data: dict):
+async def hello_response(ws: WebSocket, data: dict):
     print(data["msg"])
 ```
 
