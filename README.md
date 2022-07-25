@@ -50,6 +50,17 @@ async def hello_response(ws: Websocket, data: dict):
 ## Developement
 
 ## Contributing
+
+Install dev dependencies via Pip:
+```sh
+$ python -m pip install -r dev-requirements.txt
+```
+
+Or using Poetry:
+```sh
+$ poetry install
+```
+
 Install pre-commit:
 ```sh
 $ pre-commit install
