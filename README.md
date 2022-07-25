@@ -13,17 +13,17 @@
 ## Running
 Install requirements
 ```sh
-python -m pip install -r requirements.txt
+$ python -m pip install -r requirements.txt
 ```
 
 Run `client`:
 ```sh
-python -m src.client
+$ python -m src.client
 ```
 
 Run `server`:
 ```sh
-python -m src.server
+$ python -m src.server
 ```
 
 ## Extending
@@ -52,23 +52,23 @@ async def hello_response(ws: Websocket, data: dict):
 ## Contributing
 Install pre-commit:
 ```sh
-pre-commit install
+$ pre-commit install
 ```
 
 ## Docker
 Using Docker compose:
 ```sh
-docker-compose up
+$ docker-compose up
 ```
 
 Build Docker image:
 ```sh
-docker build --target base -t NAME:latest .
+$ docker build --target base -t App:latest .
 ```
 
 Run Docker image
 ```sh
-docker run -it --rm NAME
+$ docker run -it --rm NAME
 ```
 
 ## Team Members
