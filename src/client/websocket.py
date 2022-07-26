@@ -9,7 +9,7 @@ async def connection(url: str, registry: dict, *, request: dict = None) -> None:
     Args:
         url: Websocket's URL to connect with
         registry: Registry to use for function responses
-        request: Initial dictonary send to server upon connecting
+        request: Initial dictionary sent to server upon connecting
     """
     session = aiohttp.ClientSession()
     ws = await session.ws_connect(url)
