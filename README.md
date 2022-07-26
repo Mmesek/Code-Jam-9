@@ -28,18 +28,18 @@ $ python -m src.server
 
 ## Payload
 Payload send between client and server should follow this style, and at the very least state `type`:
-```json
+```python
 {
-    "type": "remote_function_name", // This is dispatched function on remote client/server.
+    "type": "remote_function_name", # This is dispatched function on remote client/server.
     "data": {
-        // Data can be an arbitrary Dictonary interpreted by remote function,
-        // however it's recommended to keep it along these fields for consistency
+        # Data can be an arbitrary Dictonary interpreted by remote function,
+        # however it's recommended to keep it along these fields for consistency
         "title": "Cool Title",
         "value": 0.0,
         "text": "Descriptive!",
         "footer": "Bottom line"
     },
-    "id": "#id" //Related ID for sender
+    "id": "#id" # Related ID for sender
 }
 ```
 
