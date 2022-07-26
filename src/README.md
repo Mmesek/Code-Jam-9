@@ -1,24 +1,46 @@
 # Client/Server
+
 Client/Server behaviour & coding functionalities.
 
 ## Installation
+
 ### Install dependencies
+
 ```sh
 python -m pip install -r requirements.txt
 ```
 
 ## Running
+
 ### Server
+
 Run `server`:
+
 ```sh
 python -m src.server
 ```
 
 ### Client
+
 Once you get server running, run `client`:
+
 ```sh
 python -m src.client
 ```
+
+### User Interface
+
+Set Flask App
+
+```sh
+set FLASK_APP=index
+```
+
+Run `index.py`
+
+````sh
+cd frontend
+flask run```
 
 ## Function Registry
 
@@ -33,7 +55,8 @@ Example Payload:
         "x": 1
     }
 }
-```
+````
+
 This payload is sent by server upon new client's connection, in which case `client.py` executes example `hello` function located in `examples.py`.
 
 Currently the only parameters supported are `websocket` and `data`, though some sort of cache functionality to maintain data between websocket payloads might be worth addition
