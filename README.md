@@ -16,14 +16,21 @@ Install requirements
 $ python -m pip install -r requirements.txt
 ```
 
+### Client
 Run `client`:
 ```sh
 $ python -m src.client
 ```
 
-Run `server`:
+### Server
+Run aiohttp's WS `server`:
 ```sh
 $ python -m src.server
+```
+
+Or Run Starlette's Web with WS `server` via uvicorn:
+```sh
+$ uvicorn src.server:app
 ```
 
 ## Payload
